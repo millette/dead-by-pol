@@ -18,5 +18,12 @@
       "src/js/plugins.js"
     ]
   },
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
+  "name": "dead-by-pol",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info",
+    "url": "http://robin.millette.info/"
+  },
+  "repository": "millette/dead-by-pol"
 }
