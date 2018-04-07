@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {
+    "url": "data/data.json"
+  },
+  "mark": "bar",
+  "transform": [
+    {
+      "calculate": "datum.date",
+      "as": "datep"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "timeUnit": "day"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "tasered",
+      "type": "nominal"
+    }
+  }
+}
