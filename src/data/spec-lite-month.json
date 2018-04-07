@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {
+    "url": "data/data.json"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "timeUnit": "month"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "age",
+      "type": "quantitative"
+    },
+    "row": {
+      "field": "armed_type",
+      "type": "nominal"
+    }
+  }
+}

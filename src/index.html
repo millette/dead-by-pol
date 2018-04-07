@@ -14,6 +14,12 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/vega-tooltip@0.7.0/build/vega-tooltip.min.css" integrity="sha512-UVNKIlG1I6FEO6sK4O5maQ3io2w3mlhkxUv9Y9Sr0Go1MA+mrRHrJh83d+Dlafxt6RxU3hTsp5yJYAFHx5/n6w==" rel="stylesheet">
+    <style>
+        div {
+          float: left;
+          margin-left: 2em;
+        }
+    </style>
 </head>
     <body>
         <!--[if lte IE 9]>
@@ -21,14 +27,15 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <h1>Démo Vega</h1>
-<p>Site généré par generator-veeg.</p>
-<div id="viz"></div>
+        <h1>Décès liés aux forces de l'ordre</h1>
+<p>Source des données et article: <a href="https://newsinteractives.cbc.ca/longform-custom/deadly-force">newsinteractives.cbc.ca - Deadly Force</a>.</p>
+<div id="viz-day"></div>
+<div id="viz-month"></div>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        
+
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,Symbol"></script>
       <script crossorigin="anonymous" integrity="sha512-RhgZ2MzuuqeiZCsjO78rKwermqTCaWkDlMtOOT2VbosRUY40RX4xY+Im6k7CxgAIRz1IWua7E/hQw22VSmUNkQ==" src="https://cdn.jsdelivr.net/npm/vega@3.2.1/build/vega.min.js"></script>
 <script crossorigin="anonymous" integrity="sha512-5NXmrWV6Tb2WYEAevpTNduryHPLOoFeScop6mCioqOI65EC1o7RjW5tJ5QdL13PSwJ1VLT2k4nJgbdnCkQBMaw==" src="https://cdn.jsdelivr.net/npm/vega-lite@2.3.1/build/vega-lite.min.js"></script>

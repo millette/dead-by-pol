@@ -4,12 +4,6 @@
     "url": "data/data.json"
   },
   "mark": "bar",
-  "transform": [
-    {
-      "calculate": "datum.date",
-      "as": "datep"
-    }
-  ],
   "encoding": {
     "x": {
       "field": "date",
@@ -21,7 +15,11 @@
       "type": "quantitative"
     },
     "color": {
-      "field": "tasered",
+      "field": "age",
+      "type": "quantitative"
+    },
+    "row": {
+      "field": "armed_type",
       "type": "nominal"
     }
   }
